@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - GamingWeb</title>
+    <link rel="stylesheet" href="/Styles/Normalize.css" />
+    <link rel="stylesheet" href="/Styles/CSS.css" />
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <h1 class="logotipo-web">GamingWeb</h1>
+        <nav class="navegacion-principal">
+            <ul class="lista-menu">
+                <li class="item-menu"><a href="/Index.html" class="enlace-menu">Inicio</a></li>
+                <li class="item-menu"><a href="/Pages/inicio de sesion.html" class="enlace-menu">Inicio de Sesion</a>
+                </li>
+                <li class="item-menu"><a href="/Pages/crear cuenta.html" class="enlace-menu">Crear cuenta</a></li>
+                <li class="item-menu"><a href="/Pages/Store.html" class="enlace-menu">Store</a></li>
+                <li class="item-menu"><a href="/Pages/Noticias.html" class="enlace-menu">Noticias Gaming</a></li>
+                <li class="item-menu"><a href="/Pages/Nosotros.html" class="enlace-menu">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo-pagina">Crear Cuenta</h1>
+
+    <fieldset class="contenedor-formulario">
+        <h3 class="seccion-formulario">Datos Personales</h3>
+        <div class="grupo-entrada">
+            <label for="nombre" class="etiqueta-formulario">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" class="campo-texto" placeholder="Escribe tu nombre">
+
+            <p></p>
+
+            <label for="email" class="etiqueta-formulario">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" class="campo-texto" placeholder="ejemplo@correo.com">
+
+            <p></p>
+
+            <label for="password" class="etiqueta-formulario">Contraseña:</label><br>
+            <input type="password" id="password" name="password" class="campo-texto" placeholder="Contraseña">
+
+            <p></p>
+
+            <label for="confirmar-password" class="etiqueta-formulario">Confirmar contraseña:</label><br>
+            <input type="password" id="confirmar-password" name="confirmar-password" class="campo-texto"
+                placeholder="Contraseña">
+
+            <p></p>
+
+            <label for="fecha" class="etiqueta-formulario">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha" class="campo-fecha">
+
+            <h4 class="subtitulo-formulario">Género</h4>
+
+            <div class="opciones-genero">
+                <input type="radio" id="masculino" name="genero" value="masculino" class="radio-entrada" checked>
+                <label for="masculino" class="etiqueta-radio">Masculino</label><br>
+
+                <input type="radio" id="femenino" name="genero" value="femenino" class="radio-entrada">
+                <label for="femenino" class="etiqueta-radio">Femenino</label><br>
+
+                <input type="radio" id="otro" name="genero" value="otro" class="radio-entrada">
+                <label for="otro" class="etiqueta-radio">Otro</label>
+            </div>
+
+            <p></p>
+
+            <a href="#privacidad" class="enlace-privacidad">Políticas de Privacidad y terminos de uso</a>
+
+            <p></p>
+
+            <div class="contenedor-checkbox">
+                <input type="checkbox" id="terminos" name="terminos" class="check-entrada" required>
+                <label for="terminos" class="etiqueta-check">Acepto los términos y condiciones</label>
+            </div>
+
+            <p></p>
+
+            <div class="contenedor-checkbox">
+                <input type="checkbox" id="robot" name="robot" class="check-entrada" required>
+                <label for="robot" class="etiqueta-check">No soy un Robot</label>
+            </div>
+
+            <p></p>
+
+            <input type="submit" value="Crear cuenta" class="boton-enviar">
+        </div>
+    </fieldset>
+
+    <br><br>
+</body>
+
+</html>

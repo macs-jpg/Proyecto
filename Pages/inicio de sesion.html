@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="/Styles/Normalize.css" />
+    <link rel="stylesheet" href="/Styles/CSS.css" />
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <h1 class="logotipo-web">GamingWeb</h1>
+        <nav class="navegacion-principal">
+            <ul class="lista-menu">
+                <li class="item-menu"><a href="/Index.html" class="enlace-menu">Inicio</a></li>
+                <li class="item-menu"><a href="/Pages/inicio de sesion.html" class="enlace-menu">Inicio de Sesion</a>
+                </li>
+                <li class="item-menu"><a href="/Pages/crear cuenta.html" class="enlace-menu">Crear cuenta</a></li>
+                <li class="item-menu"><a href="/Pages/Store.html" class="enlace-menu">Store</a></li>
+                <li class="item-menu"><a href="/Pages/Noticias.html" class="enlace-menu">Noticias Gaming</a></li>
+                <li class="item-menu"><a href="/Pages/Nosotros.html" class="enlace-menu">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo-pagina">Inicio de sesión</h1>
+
+    <div class="contenedor-login">
+        <h2 class="subtitulo-formulario">Iniciar Sesión</h2>
+        <fieldset class="contenedor-formulario">
+            <div class="grupo-entrada">
+                <label for="email" class="etiqueta-formulario">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" class="campo-texto" placeholder="ejemplo@correo.com">
+
+                <p></p>
+
+                <label for="password" class="etiqueta-formulario">Contraseña:</label><br>
+                <input type="password" id="password" name="password" class="campo-texto" placeholder="Contraseña">
+
+                <p></p>
+
+                <div class="contenedor-checkbox">
+                    <input type="checkbox" id="terminos" name="terminos" class="check-entrada" required>
+                    <label for="terminos" class="etiqueta-check">Acepto los términos y condiciones</label>
+                </div>
+
+                <section class="seccion-enlaces-legales">
+                    <a href="#privacidad" class="enlace-privacidad">Políticas de Privacidad y terminos de uso</a>
+                </section>
+
+                <p></p>
+
+                <div class="contenedor-botones">
+                    <input type="submit" value="Iniciar Sesión" class="boton-enviar">
+
+                    <p></p>
+
+                    <form action="crear cuenta.html" class="formulario-secundario">
+                        <button type="submit" class="boton-secundario">Crear Cuenta</button>
+                    </form>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <br><br>
+</body>
+
+</html>

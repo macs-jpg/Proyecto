@@ -1,0 +1,290 @@
+
+:root {
+    --fondo-oscuro: #0f0f12;
+    --fondo-tarjeta: #16213e;
+    --azul-neon: #3498db;
+    --azul-hover: #2980b9;
+    --texto-claro: #e0e0e0;
+    --texto-gris: #a2a2a2;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--fondo-oscuro);
+    color: var(--texto-claro);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.encabezado-principal {
+    background-color: #1a1a2e;
+    border-bottom: 3px solid var(--azul-neon);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logotipo-web {
+    color: var(--azul-neon);
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.enlace-menu {
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.enlace-menu:hover {
+    color: var(--azul-neon);
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+}
+
+.contenedor-formulario {
+    background-color: var(--fondo-tarjeta);
+    border: 1px solid var(--azul-neon);
+    border-radius: 12px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto 50px auto;
+}
+
+.seccion-formulario, .subtitulo-formulario {
+    color: var(--azul-neon);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo-texto, .campo-fecha {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #0f172a;
+    border: 1px solid #2e4066;
+    border-radius: 6px;
+    color: var(--blanco);
+}
+
+.boton-enviar, .boton-info{
+    width: 100%;
+    background-color: var(--azul-neon);
+    border: 2px solid rgb(17, 90, 199);
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-secundario {
+    background: transparent;
+    border: 1px solid var(--texto-gris);
+    color: var(--texto-gris);
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.indice-noticias {
+    background: var(--fondo-tarjeta);
+    border: 1px solid var(--azul-neon);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 55%;
+    margin: auto;
+}
+
+.titulo-indice {
+    color: var(--azul-neon);
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.lista-indice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+
+.contenedor-principal, .contenedor-principal-tienda {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cuadricula-noticias, .cuadricula-novedades, .cuadricula-juegos{
+    display:flex;
+    flex-direction:row;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.tarjeta-noticia{
+    flex: 1 1 300px;    
+    max-width: 100%;      
+}
+.tarjeta-noticia, .tarjeta-noticia-tienda {
+    background-color: var(--fondo-tarjeta);
+    border-radius: 10px;
+}
+
+.imagen-noticia, .imagen-tarjeta, .imagen-novedad {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo-juego, .titulo-novedad, .titulo-seccion-tienda {
+    padding: 15px;
+    margin: 0;
+    color: var(--azul-neon);
+    text-align: center;
+}
+
+.contenido-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.video-promocional {
+    flex: 2;
+    min-width: 300px;
+    width: 100%;
+}
+
+.barra-lateral-destacados {
+    flex: 1;
+    min-width: 200px;
+}
+
+.imagen-miniatura {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contenedor-articulo {
+    background: #1a1a2e;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--azul-neon);
+}
+
+.iframe-seguridad {
+    border: 1px solid var(--azul-neon);
+    border-radius: 8px;
+}
+
+.pie-pagina, .pie-pagina-tienda {
+    background-color: #0a0a0c;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #333;
+}
+
+.enlace-pie {
+    color: var(--azul-neon);
+    margin: 0 10px;
+}
+
+
+.contenedor-video {
+    width: 95%;
+    height: 550px;
+    border: 2px solid var(--azul-neon);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.video-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.barra-accesos {
+    background-color: var(--fondo-tarjeta);
+    border-color: var(--azul-neon);
+    position:fixed; /* Esto sirve para que el aside se quede en un punto especifico de la ´ppantalla y se mueva con el usuario*/
+    right: 20px;    /*Aquí le dices al aside que debe estar 20 pixeles alejado del borde derecho */
+    top: 40%; /* Esto sirve para que el borde de arriba quede a la mitad de la pantalla*/
+    width: 200px;
+    border-radius: 10px; /*border-radius sirve para redondear las esquinas*/
+}
+
+.accesos-simples {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contenedor-enlaces-simples {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.enlace-simple {
+    color: var(--azul-neon);
+    padding: 10px 20px;
+    border: 1px solid var(--azul-neon);
+    border-radius: 20px; 
+}
+
+.enlace-simple:hover {
+    background-color: var(--azul-neon);
+    color: var(--fondo-oscuro);
+}
+
+.contenedor-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contenedor-certificados img {
+    height: 90px;
+    margin: 10px;
+}
+
+.redes-sociales img {
+    width: 35px;
+    margin: 0 10px;
+}
+
+.contenedor-boton {
+    margin-top: 15px;
+}
+
+.boton-info {
+    max-width: 200px; 
+}
